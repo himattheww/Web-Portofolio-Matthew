@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <title>Matthew - Homepage</title>
+</head>
+
+<body class="bg-dark">
+  <!-- navbar cari aja di dokumentasi bootstrap -->
+
+  <!-- nav section dimulai -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Berwibuwa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <!-- active menandakan dia lagi di page mana yang di highlight -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Others
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/contact">Contact</a></li>
+              <li><a class="dropdown-item" href="/daftarmanga">Daftar manga</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- nav section end -->
+
+  <!-- first layout start -->
+  <div class="container-fluid bg-dark text-light mb-4" style="height: auto">
+    <!-- ini carousel images yang bisa slide slide -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/carousel-one piece.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <!-- d-none d-md-block itu d= display, md-block diadain ketika size nya memenuhi 
+                        sesuai breakpoint -->
+            <h5>One Piece</h5>
+            <p>Adventure of young man finding greatest treasure of king of pirates One Piece</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/carousel-bleach.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>Bleach </h5>
+            <p>Soul reapers come to town? Im up for it</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/carousel-chainsawman.jpg" class="d-block w-100" alt="..." style="height: auto">
+          <div class="carousel-caption">
+            <h5>Chainsawman</h5>
+            <p>Helping a starving pig make me into a powerful man</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- end of carousel -->
+
+    <!--  mt margin top -->
+    <div class="row text-center align-items-center mt-4">
+      <!-- col itu bar, jadi setiap web itu batas nya ada 12 bar -->
+      <div class="col-12">
+        <img src="/assets/profile.jpeg" alt="" width="150" height="150">
+        <h2 class="mt-2">Matthew Herbert Ionwyn</h2>
+        <i>Mencoba untuk menghadirkan manga pilihan para pembaca manga atau dapat kita sebut <span
+            style="color:coral">wibu</span></i>
+      </div>
+    </div>
+    <!-- card starts  -->
+    <div class="row text-dark mt-4">
+      <!-- g= gap atau jarak -->
+      <div class="col-sm-4 g-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Daftar Manga</h5>
+            <p class="card-text">Berikut merupakan pilihan manga terbaik berdasarkan data yang ada di planet
+              namek.</p>
+            <a href="/daftarmanga" class="btn btn-dark d-block">Daftar Manga</a>
+            <!-- d block agar button panjang dan lurus di tengah -->
+          </div>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+            📖
+          </span>
+        </div>
+      </div>
+      <div class="col-sm-4 g-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Tentang saya</h5>
+            <p class="card-text">
+              Saya merupakan lulusan teknik elektro
+              (<span style="color: coral">wibu</span>) yang sedang mempelajari web-development.
+            </p>
+            <a href="/about" class="btn btn-dark d-block">About me</a>
+          </div>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+            👨‍💼
+          </span>
+        </div>
+      </div>
+      <div class="col-sm-4 g-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Contact me</h5>
+            <p class="card-text">Berikut merupakan contact yang dapat dihubungi jika anda tertarik dan ingin
+              bekerja sama dengan saya.</p>
+            <a href="/contact" class="btn btn-dark d-block">Hit me up</a>
+          </div>
+        </div>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+
+        </span>
+      </div>
+    </div>
+    <!-- card ends  -->
+
+  </div>
+  <!-- first layout end -->
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
